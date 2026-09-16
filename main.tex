@@ -45,121 +45,133 @@
 \pdfgentounicode=1
 
 \newcommand{\resumeItem}[1]{
-  \item\small{
+\item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Ryan Tran} \\ \vspace{1pt}
-    \small Torrance, CA $|$
-    \small \href{mailto:ryan.tran7312@gmail.com}{\underline{ryan.tran7312@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/wisp/}{\underline{linkedin.com/in/wisp}} $|$
-    \href{https://github.com/harvest7777}{\underline{github.com/harvest7777}}
+  \textbf{\Huge \scshape Ryan Tran} \\ \vspace{1pt}
+  \small Torrance, CA $|$
+  \small
+  \href{mailto:ryan.tran7312@gmail.com}{\underline{ryan.tran7312@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/wisp/}{\underline{linkedin.com/in/wisp}} $|$
+  \href{https://github.com/harvest7777}{\underline{github.com/harvest7777}}
 \end{center}
 
 \section{Education}
 \resumeSubHeadingListStart
-  \resumeSubheading
-    {BS Computer Science - 4.0/4.0 GPA}{May 2027}
-    {California State University, Long Beach}{Long Beach, CA}
+\resumeSubheading
+{BS Computer Science - 4.0/4.0 GPA}{May 2027}
+{California State University, Long Beach}{Long Beach, CA}
 \resumeSubHeadingListEnd
 
 \begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{
-\textbf{Relevant Coursework}: DSA, Operating Systems, Object-Oriented Programming, Distributed Computing
-}}
+    \small{
+    \item{
+        \textbf{Relevant Coursework}: DSA, Operating Systems,
+        Object-Oriented Programming, Distributed Computing
+    }}
 \end{itemize}
 
 \section{Experience}
 \resumeSubHeadingListStart
 
-% \resumeSubheading
-%   {Layup Parts}{October 2026 - December 2026}
-%   {Software Engineer Intern}{Hunnington Beach, CA}
-%   \resumeItemListStart
-%     \resumeItem{Incoming Fall 2026}
-%   \resumeItemListEnd
+\resumeSubheading
+{SpaceX}{May 2026 -- August 2026}
+{Software Engineer Intern}{Palo Alto, CA}
+\resumeItemListStart
+\resumeItem{Consolidated 4 repos into the existing monorepo and
+deleted 6 apps, cleaning 2 years of technical debt}
+\resumeItem{Rewrote CI manifest generation and comparison to fix the
+near 0\% accuracy rate of builds for 1,200 engineers}
+\resumeItem{Migrated OIDC to group based provider and built
+configuration interface, deleting 9k lines of hardcoded RBAC}
+\resumeItem{Mentored a new grad in fixing ephemeral cert failures via
+a stable CA, reclaiming 30 mins on 300 failed PRs a day}
+\resumeItemListEnd
 
 \resumeSubheading
-  {Layup Parts}{Fall 2026 - December 2026}
-  {Software Engineer Intern}{Hunnington Beach, CA}
-  \resumeItemListStart
-    \resumeItem{Incoming Fall 2026}
-  \resumeItemListEnd
+{CSULB}{January 2026 -- Present}
+{Undergraduate Researcher -- Accepted IEEE ICPADS 2026}{Long Beach, CA}
+\resumeItemListStart
+\resumeItem{Built
+  Python simulation suite with dependency injection, enabling rapid
+adaptation to changing requirements}
+\resumeItem{Parallelized simulation runs by designing thread-safe
+scenarios, significantly improving execution speed}
+\resumeItem{Designed and wrote tests for unchanging behavior,
+protecting the suite from bugs while keeping tests maintainable}
+\resumeItemListEnd
 
 \resumeSubheading
-  {SpaceX}{May 2026 -- August 2026}
-  {Software Engineer Intern}{Palo Alto, CA}
-  \resumeItemListStart
-    \resumeItem{Consolidated 4 repos into the existing monorepo and deleted 6 apps, cleaning 2 years of technical debt}
-    \resumeItem{Rewrote CI manifest generation and comparison to fix the near 0\% accuracy rate of builds for 1,200 engineers}
-    \resumeItem{Migrated OIDC to group based provider and built configuration interface, deleting 9k lines of hardcoded RBAC}
-    \resumeItem{Mentored a new grad in fixing ephemeral cert failures via a stable CA, reclaiming 30 mins on 300 failed PRs a day} 
-  \resumeItemListEnd
-  
-\resumeSubheading
-  {CSULB}{January 2026 -- Present}
-  {Undergraduate Researcher}{Long Beach, CA}
-  \resumeItemListStart
-    \resumeItem{Built 
-    Python simulation suite with dependency injection, enabling rapid adaptation to changing requirements}
-    \resumeItem{Parallelized simulation runs by designing thread-safe scenarios, significantly improving execution speed}
-    \resumeItem{Designed and wrote tests for unchanging behavior, protecting the suite from bugs while keeping tests maintainable}
-  \resumeItemListEnd
+{Fetch AI}{September 2025 -- May 2026}
+{Software Engineer Intern}{Menlo Park, CA}
+\resumeItemListStart
+\resumeItem{Integrated Square into a LangGraph agent in collaboration
+with coffee shop owners, generating \$2k in sales}
+\resumeItem{Led 2 interns through task delegation and code reviews,
+catching and fixing 4 business rule violations pre-launch}
+\resumeItem{Designed and deployed a multi-tenant ReAct agent serving
+25k live hacker queries across 4 hackathons}
+\resumeItem{Decoupled payment business logic from Django and FastAPI
+endpoints, then refactored a suite of 70 tests}
+\resumeItemListEnd
 
 \resumeSubheading
-  {Fetch AI}{September 2025 -- May 2026}
-  {Software Engineer Intern}{Menlo Park, CA}
-  \resumeItemListStart
-    \resumeItem{Integrated Square into a LangGraph agent in collaboration with coffee shop owners, generating \$2k in sales}
-    \resumeItem{Led 2 interns through task delegation and code reviews, catching and fixing 4 business rule violations pre-launch}
-    \resumeItem{Designed and deployed a multi-tenant ReAct agent serving 25k live hacker queries across 4 hackathons}
-    \resumeItem{Decoupled payment business logic from Django and FastAPI endpoints, then refactored a suite of 70 tests}
-  \resumeItemListEnd
-  
-\resumeSubheading
-  {HTM Coaching}{September 2025 -- February 2026}
-  {Software Engineer Intern}{Remote}
-  \resumeItemListStart
-    \resumeItem{Designed a relational schema with Supabase, enabling multi-tenancy, supporting \$20k ARR across 40 tenants}
-    \resumeItem{Developed versioned SQL migration scripts, preserving 100\% of data across 300k legacy production records}
-    \resumeItem{Used Next.js prefetching and TanStack Query cache warming to cut tab switch latency from 200ms to 50ms}
-    \resumeItem{Implemented Stripe integration tests (4 happy-path, 5 edge-case) in a CI/CD pipeline, gating production deploys}
-  \resumeItemListEnd
+{HTM Coaching}{September 2025 -- February 2026}
+{Software Engineer Intern}{Remote}
+\resumeItemListStart
+\resumeItem{Designed a relational schema with Supabase, enabling
+multi-tenancy, supporting \$20k ARR across 40 tenants}
+\resumeItem{Developed versioned SQL migration scripts, preserving
+100\% of data across 300k legacy production records}
+\resumeItem{Used Next.js prefetching and TanStack Query cache warming
+to cut tab switch latency from 200ms to 50ms}
+\resumeItem{Implemented Stripe integration tests (4 happy-path, 5
+edge-case) in a CI/CD pipeline, gating production deploys}
+\resumeItemListEnd
 
 \resumeSubheading
-  {Bazalu}{May 2025 -- August 2025}
-  {Software Engineer Intern}{Long Beach, CA}
-  \resumeItemListStart
-    \resumeItem{Implemented Sentry logging in Next.js and Fastify, found slow queries, and cut latency by 400ms via indexing}
-    \resumeItem{Refactored 75 Fastify RPC endpoints into REST APIs, enabling consistent and structured API versioning}
-    \resumeItem{Integrated pagination controls into search APIs, preventing request-size failures as catalog scaled past 5k items}
-  \resumeItemListEnd
+{Bazalu}{May 2025 -- August 2025}
+{Software Engineer Intern}{Long Beach, CA}
+\resumeItemListStart
+\resumeItem{Implemented Sentry logging in Next.js and Fastify, found
+slow queries, and cut latency by 400ms via indexing}
+\resumeItem{Refactored 75 Fastify RPC endpoints into REST APIs,
+enabling consistent and structured API versioning}
+\resumeItem{Integrated pagination controls into search APIs,
+preventing request-size failures as catalog scaled past 5k items}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -167,32 +179,43 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\underline{\textbf{\href{https://www.youtube.com/watch?v=IH_bbZ4oxDE}{1st Place - LAHacks}}}}{}
+{\underline{\textbf{\href{https://www.youtube.com/watch?v=IH_bbZ4oxDE}{1st
+Place - LAHacks}}}}{}
 \resumeItemListStart
-\resumeItem{Led a team of 5 in building a 5-agent LangGraph system, winning 1st out of 1k competitors and \$2k}
+\resumeItem{Led a team of 5 in building a 5-agent LangGraph system,
+winning 1st out of 1k competitors and \$2k}
 \resumeItemListEnd
 
 % \resumeProjectHeading
-% {\underline{\textbf{\href{https://www.youtube.com/watch?v=rFgtk79PA-E}{1st Place - MarinaHacks}}}}{}
+% {\underline{\textbf{\href{https://www.youtube.com/watch?v=rFgtk79PA-E}{1st
+% Place - MarinaHacks}}}}{}
 % \resumeItemListStart
-% \resumeItem{Developed and deployed a real-time multiplayer game (Express.js, Socket.io, Docker, AWS EC2), placing 1st out of 80 competitors}
+% \resumeItem{Developed and deployed a real-time multiplayer game
+% (Express.js, Socket.io, Docker, AWS EC2), placing 1st out of 80 competitors}
 % \resumeItemListEnd
 
 \resumeProjectHeading
-{\underline{\textbf{\href{https://harvest7777.github.io/binarytreeosu/}{2,000+ Users - Binary Tree OSU}}}}{}
+{\underline{\textbf{\href{https://harvest7777.github.io/binarytreeosu/}{2,000+
+Users - Binary Tree OSU}}}}{}
 \resumeItemListStart
-\resumeItem{Built a binary tree visualization game with traversal validation, used by 300 new students per semester}
+\resumeItem{Built a binary tree visualization game with traversal
+validation, used by 300 new students per semester}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{
-\textbf{Languages}: Python, TypeScript, C\#, Java, SQL, C++, JavaScript, HTML, CSS, Bash\\
-\textbf{Frameworks \& Backends}: React, Next.js, Express.js, Fastify, FastAPI, LangChain, LangGraph, Entity Framework \\
-\textbf{Databases}: PostgreSQL, MongoDB, CockroachDB, Supabase, Firebase, ChromaDB, Pinecone, MySQL\\
-\textbf{Developer Tools}: Git, Docker, Unix, Linux, AWS, Google Cloud, Kubernetes, ArgoCD}}
+    \small{
+    \item{
+        \textbf{Languages}: Python, TypeScript, C\#, Java, SQL, C++,
+        JavaScript, HTML, CSS, Bash\\
+        \textbf{Frameworks \& Backends}: React, Next.js, Express.js,
+        Fastify, FastAPI, LangChain, LangGraph, Entity Framework \\
+        \textbf{Databases}: PostgreSQL, MongoDB, CockroachDB,
+        Supabase, Firebase, ChromaDB, Pinecone, MySQL\\
+        \textbf{Developer Tools}: Git, Docker, Unix, Linux, AWS, Google
+    Cloud, Kubernetes, ArgoCD}}
 \end{itemize}
 
 \end{document}
